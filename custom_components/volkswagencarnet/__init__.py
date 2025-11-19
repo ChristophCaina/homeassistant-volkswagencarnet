@@ -37,6 +37,7 @@ from volkswagencarnet.vw_dashboard import (
     Sensor,
     Switch,
     TrunkLock,
+    Climate,
 )
 from volkswagencarnet.vw_vehicle import Vehicle
 
@@ -348,6 +349,7 @@ class VolkswagenEntity(CoordinatorEntity, RestoreEntity):
         | TrunkLock
         | Number
         | Instrument
+        | Climate
     ):
         """Return corresponding instrument."""
         return self.data.instrument(self.vin, self.component, self.attribute)
