@@ -42,4 +42,5 @@ COMPONENTS = {
     "select": "select",
     "switch": "switch",
     "number": "number",
+    "climate": "climate",
 }
